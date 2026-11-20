@@ -5,30 +5,40 @@ updated: 2026-11-20
 ---
 ## Updating
 
-The one-click deploy copied Knock into **your own GitHub repository**. It is a separate copy, not a fork, so GitHub's "Sync fork" button usually isn't there. Vercel redeploys your copy every time it changes, so updating means bringing the new code into it.
+The one-click deploy copies Knock into **your own GitHub repository**. It is a snapshot, not a fork and not a live link: it has no shared history with the original project, so improvements I publish don't reach your copy by themselves, and GitHub's **Sync fork** button and `git pull` don't work on it. Knock has its own way to update instead.
 
-### With Git (a few commands)
+### Automatic: a pull request you merge (recommended)
 
-You need [Git](https://git-scm.com/downloads) and a copy of your repository on your computer.
+New installs include a GitHub Action called **Update Knock**. Every Monday it checks for a newer Knock. If there is one, it opens a pull request titled **Update Knock** in your repository. **Nothing changes until you merge it.** Merge it, wait for Vercel to redeploy, and you're updated.
+
+- **Check now:** in your repository open **Actions**, then **Update Knock**, then **Run workflow**.
+- **The app tells you too.** In **Settings**, admins see "Knock x.y.z is available" when a newer version exists.
+- **First time:** GitHub may ask you to enable Actions (the Actions tab shows a green button). If the workflow can't open the pull request by itself, it still pushes a branch called `knock-update`, and the run's summary has a link that opens the pull request for you. Or turn on **Settings, Actions, General, Allow GitHub Actions to create and approve pull requests**.
+- **Why a pull request and not automatic?** Knock can unlock a door. You should be able to look at new code before it goes live.
+
+### If you installed before this existed (one time)
+
+Your repository doesn't have the Update Knock workflow yet. Add it once:
+
+1. On GitHub, open your repository, choose **Add file, Create new file**.
+2. Name it `.github/workflows/update-knock.yml`.
+3. Paste in the contents of [the workflow file](https://raw.githubusercontent.com/VishalT25/knock/main/.github/workflows/update-knock.yml) and commit.
+4. Open **Actions, Update Knock, Run workflow** to get the first update straight away.
+
+### By hand, with one command
+
+If you'd rather do it yourself, you need [Git](https://git-scm.com/downloads):
 
 ```
-git clone https://github.com/YOUR-NAME/knock.git
-cd knock
-git remote add upstream https://github.com/VishalT25/knock.git
-git pull upstream main
+git clone https://github.com/YOUR-NAME/YOUR-REPO.git
+cd YOUR-REPO
+curl -fsSL https://raw.githubusercontent.com/VishalT25/knock/main/scripts/sync-upstream.sh | bash
 git push
 ```
 
-- The first two lines download your copy.
-- `git remote add upstream` points at the original project. You only do this once.
-- `git pull upstream main` brings in the new version. If Git reports a conflict, you changed a file the project also changed; keep your version of settings-style files and the project's version of code files.
-- `git push` sends it to GitHub, and Vercel redeploys on its own.
+The script makes your code files match the latest Knock exactly and commits the result. **Don't use `git pull`**: on a one-click copy it stops with "refusing to merge unrelated histories". The script leaves the `.github` folder alone, and it does nothing if you're already up to date.
 
-Next time, you only need `git pull upstream main` and `git push`.
-
-### Without Git
-
-Skip the update. Knock keeps working as it is. The only reason to update is a new feature or a fix you want. If you'd rather start fresh, deploy a new copy with the button, attach the same Neon database, and delete the old Vercel project.
+If you changed any code files yourself, the update replaces them. Your changes are still in the repository's history, so you can look at them with `git log` and bring them back.
 
 ### After an update
 
