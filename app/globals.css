@@ -399,3 +399,7 @@ p { margin: 0; text-wrap: pretty; }
 .beats .beat .n { display: block; margin-bottom: 0.4rem; }
 
 .hero2 { overflow-x: clip; }
+
+.made-by { display: flex; align-items: center; gap: 0.5rem; margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--glass-edge); font-weight: 600; font-size: 0.9375rem; }
+.made-gh { display: inline-grid; place-items: center; width: 2.75rem; height: 2.75rem; border-radius: 50%; color: inherit; transition: background-color 0.2s, transform 0.3s var(--ease-out); }
+.made-gh:hover { background: var(--glass-tint); transform: scale(1.06); }
