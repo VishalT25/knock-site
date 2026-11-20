@@ -21,9 +21,9 @@ Use the **Deploy to Vercel** button on the [home page](/) or at the top of the [
 ## 2. Follow Vercel's screens
 
 1. **Create a Git repository.** Vercel asks to copy Knock into a new repository in your GitHub account. Keep the suggested name, `knock`, and choose **private** if it offers the choice.
-2. **Add the database.** Vercel offers a Neon Postgres database. Accept it. This is what stores your household, call log and notification settings, and it creates the `DATABASE_URL` setting for you.
+2. **Add the database.** Vercel offers a Neon Postgres database. Press **Add**, keep the **Free** plan (no card needed) and press **Continue**, then **Create**. You can leave Neon's *Auth* switch as it is; Knock doesn't use it. This is what stores your household, call log and notification settings, and it creates the `DATABASE_URL` setting for you.
 3. **Choose a setup password.** Vercel asks for one value, `SETUP_TOKEN`. This is *a password you invent*. You will type it once on Knock's first-run screen so nobody else can claim your deployment in the minutes before you do. Make it long and unguessable, and keep it somewhere safe (a password manager is ideal).
-4. **Press Deploy.** It takes about a minute.
+4. **Press Deploy.** The first time on a new Vercel account, it may ask you to verify your identity with a 6-digit code emailed to you. Enter it and the deploy carries on. It takes about a minute.
 
 :::tip If Vercel did not add the database
 Open your project in Vercel, go to **Storage**, choose **Create**, pick **Neon**, and connect it to the project. This sets `DATABASE_URL`. Then go to **Deployments**, open the menu on the latest one and choose **Redeploy**.
