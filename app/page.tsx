@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Hero } from "@/components/Hero";
 import { Checker } from "@/components/Checker";
 import { FAQ } from "@/lib/faq";
-import { SITE_URL, deployUrl } from "@/lib/site";
+import { REPO_URL, SITE_URL, deployUrl } from "@/lib/site";
 
 export default function Home() {
   const ld = {
@@ -17,7 +17,13 @@ export default function Home() {
         url: SITE_URL,
         license: "https://opensource.org/license/mit",
         offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+        codeRepository: REPO_URL,
+        isAccessibleForFree: true,
+        inLanguage: "en",
+        author: { "@id": `${SITE_URL}/#org` },
       },
+      { "@type": "Organization", "@id": `${SITE_URL}/#org`, name: "Knock", url: SITE_URL, logo: `${SITE_URL}/icon`, sameAs: [REPO_URL, "https://github.com/VishalT25"] },
+      { "@type": "WebSite", "@id": `${SITE_URL}/#site`, name: "Knock", url: SITE_URL, inLanguage: "en", publisher: { "@id": `${SITE_URL}/#org` } },
       { "@type": "FAQPage", mainEntity: FAQ.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
     ],
   };

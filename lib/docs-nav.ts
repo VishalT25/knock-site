@@ -34,6 +34,14 @@ export const NAV: NavGroup[] = [
     ],
   },
   {
+    title: "Guides",
+    items: [
+      { slug: "forward-apartment-buzzer-to-cell-phone", title: "Forward your apartment buzzer to your cell phone", blurb: "Who to ask, what to say, and how to share the call with roommates.", time: "4 min" },
+      { slug: "intercom-unlock-digit", title: "Which digit opens the door?", blurb: "Intercom unlock codes: usually 9, and how to find yours.", time: "3 min" },
+      { slug: "apartment-buzzer-app-alternatives", title: "Apartment buzzer apps compared", blurb: "Knock, DoorBuzzin, Lowkey and BuzzerBee, and when to pick which.", time: "4 min" },
+    ],
+  },
+  {
     title: "Help",
     items: [
       { slug: "troubleshooting", title: "Troubleshooting", blurb: "Find your symptom, get the fix.", time: "" },
