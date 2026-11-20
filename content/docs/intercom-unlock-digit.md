@@ -26,3 +26,5 @@ Knock's default is **9**. If your building uses another digit, change it in Knoc
 ## If no digit works
 
 Some intercoms only call to talk and have no unlock feature over the phone, and others unlock through a vendor's own app. Check with your building. If your system can't unlock from a call, a phone-based buzzer app can't help, and the [intercom check](/docs/will-it-work) will tell you before you spend anything.
+
+**See also:** [answer your buzzer with your cell phone](/docs/answer-apartment-buzzer-with-cell-phone), [open source, self-hosted buzzer app](/docs/open-source-self-hosted-apartment-buzzer).

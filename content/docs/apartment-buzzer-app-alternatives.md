@@ -36,3 +36,5 @@ The descriptions of other apps come from their public App Store listings and a w
 All of the call-forwarding apps depend on the same thing: your building's intercom **must be able to call a phone number**, and **unlock when you press a digit**. Check yours first with the [five-minute test](/docs/will-it-work), then see how to [get the number changed](/docs/forward-apartment-buzzer-to-cell-phone).
 
 Ready to try it? [Deploy Knock](/docs/deploy), or read [what it costs](/docs/costs) first.
+
+**See also:** [an open source, self-hosted buzzer app](/docs/open-source-self-hosted-apartment-buzzer), [apartment buzzer app for Canada](/docs/apartment-buzzer-app-canada).

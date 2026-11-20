@@ -37,3 +37,5 @@ Have a friend buzz your unit. Your phone should ring from an unfamiliar number. 
 ## When it can't work
 
 Some systems can't dial out at all, only ring a wired handset. Others only work with a vendor's own app. In those cases, a building-side upgrade is the only route, and that is the property manager's decision.
+
+**See also:** [answer your buzzer with your cell phone](/docs/answer-apartment-buzzer-with-cell-phone), [buzzer not calling your phone?](/docs/apartment-buzzer-not-calling-my-phone), [apartment buzzer app for Canada](/docs/apartment-buzzer-app-canada).
