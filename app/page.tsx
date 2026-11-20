@@ -91,19 +91,19 @@ export default function Home() {
 
       <section id="cost" className="section" aria-labelledby="cost-h">
         <div className="wrap">
-          <h2 id="cost-h" className="section-title">About $1 a month</h2>
+          <h2 id="cost-h" className="section-title">About $1 to $2 a month</h2>
           <div className="cost-grid">
             <div className="card glass">
               <div className="rows">
                 <div><b>Knock</b><span className="price">Free</span></div>
                 <div><b>Hosting and database</b><span className="price">Free tier</span></div>
-                <div><b>Telnyx number and calls</b><span className="price">~$1 / month</span></div>
-                <div><b>One-time Telnyx credit</b><span className="price">~$5</span></div>
+                <div><b>Telnyx number and calls</b><span className="price">~$1 to $2 / month</span></div>
+                <div><b>Telnyx credit to start</b><span className="price">~$5</span></div>
               </div>
             </div>
             <div className="card glass" style={{ display: "grid", gap: "0.6rem", alignContent: "start" }}>
               <h3>The one catch</h3>
-              <p>A new Telnyx account is a trial, and trials reject your building&rsquo;s calls. Add about $5 of credit to upgrade it. <Link href="/docs/telnyx/upgrade">How</Link></p>
+              <p>A new Telnyx account is a trial, and trials reject your building&rsquo;s calls. Adding credit upgrades it; about $5 worked for us. <Link href="/docs/telnyx/upgrade">How</Link></p>
             </div>
           </div>
           <div className="cta-row">

@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   alternates: { canonical: "/docs" },
 };
 
+/** Pages already listed in "The path" above; the cards below cover everything else. */
+const PATH = new Set(["will-it-work", "deploy", "first-run", "roommates", "connect-building"]);
+
 export default function DocsHome() {
   return (
     <>
@@ -33,7 +36,7 @@ export default function DocsHome() {
           </ol>
           <p><a className="btn btn-key btn-lg" href={deployUrl()} rel="noopener" style={{ textDecoration: "none", color: "var(--on-primary)" }}>Deploy to Vercel</a></p>
         </div>
-        {NAV.map((g) => (
+        {NAV.map((g) => ({ ...g, items: g.items.filter((i) => !PATH.has(i.slug) && !i.slug.startsWith("telnyx")) })).filter((g) => g.items.length > 0).map((g) => (
           <section key={g.title} aria-labelledby={`g-${g.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}>
             <h2 id={`g-${g.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`} style={{ fontSize: "1.25rem", margin: "1.5rem 0 0.9rem" }}>{g.title}</h2>
             <div className="doc-grid">

@@ -288,6 +288,7 @@ p { margin: 0; text-wrap: pretty; }
 .prose hr { border: 0; height: 1px; background: var(--glass-edge); margin-block: 2rem; }
 .prose table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 0.9375rem; border-radius: 1.25rem; overflow: hidden; border: 1px solid var(--glass-rim); background: var(--glass-tint); display: block; overflow-x: auto; }
 .prose th, .prose td { text-align: left; padding: 0.7rem 0.9rem; vertical-align: top; border-top: 1px solid var(--glass-edge); min-width: 8rem; }
+@media (max-width: 40rem) { .prose th, .prose td { min-width: 0; padding: 0.6rem 0.6rem; font-size: 0.9375rem; overflow-wrap: break-word; } .prose th:first-child, .prose td:first-child { min-width: 5.25rem; } }
 .prose thead th { border-top: 0; background: var(--glass-strong); font-weight: 700; }
 .prose kbd { font-weight: 800; padding: 0.05em 0.5em; border-radius: 0.5rem; background: var(--glass-strong); border: 1px solid var(--glass-rim); }
 .prose figure { margin: 1.6rem 0; display: grid; gap: 0.6rem; }
@@ -343,7 +344,7 @@ p { margin: 0; text-wrap: pretty; }
 /* narrow screens show a wide screenshot at a small size, so say that it can be enlarged */
 .prose figure a { position: relative; }
 @media (max-width: 48rem) {
-  .prose figure a::after { content: "Tap to enlarge"; position: absolute; right: 0.6rem; bottom: 0.6rem; padding: 0.3rem 0.7rem; border-radius: 999px; background: var(--glass-strong); border: 1px solid var(--glass-line); font-size: 0.75rem; font-weight: 700; -webkit-backdrop-filter: var(--blur); backdrop-filter: var(--blur); pointer-events: none; }
+  .prose figure a::after { content: "Open full size"; position: absolute; right: 0.6rem; bottom: 0.6rem; padding: 0.3rem 0.7rem; border-radius: 999px; background: var(--glass-strong); border: 1px solid var(--glass-line); font-size: 0.75rem; font-weight: 700; -webkit-backdrop-filter: var(--blur); backdrop-filter: var(--blur); pointer-events: none; }
 }
 /* light mode: tiles and buzzers need a firmer fill to separate from the cream page */
 :root:not([data-theme="dark"]) .tile, :root:not([data-theme="dark"]) .buzzer, :root:not([data-theme="dark"]) .card { background: oklch(1 0 0 / 0.66); }
@@ -403,3 +404,14 @@ p { margin: 0; text-wrap: pretty; }
 .made-by { display: flex; align-items: center; gap: 0.5rem; margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--glass-edge); font-weight: 600; font-size: 0.9375rem; }
 .made-gh { display: inline-grid; place-items: center; width: 2.75rem; height: 2.75rem; border-radius: 50%; color: inherit; transition: background-color 0.2s, transform 0.3s var(--ease-out); }
 .made-gh:hover { background: var(--glass-tint); transform: scale(1.06); }
+
+/* phones: a tighter hero so the Open button is on the first screen, and the notification straddles the phone's edge instead of covering text */
+@media (max-width: 30rem) {
+  .hero2 h1 { font-size: clamp(2.2rem, 10.5vw, 2.6rem); }
+  .hero2 .copy { gap: 0.9rem; }
+  .hero2-grid { gap: 2rem; }
+  .float-notif { top: -1.6rem; left: 0.5rem; }
+}
+@media (max-height: 52rem) and (min-width: 60rem) { .hero-phone .phone { width: min(20.5rem, 84vw, calc((100dvh - 9rem) * 0.494)); } }
+.site-foot a, .crumbs a { display: inline-flex; align-items: center; min-height: 2.75rem; }
+@media (prefers-reduced-motion: reduce) { .float-notif, .float-done { transition-duration: 0.01ms; } }

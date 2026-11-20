@@ -15,7 +15,6 @@ export function Hero() {
             <a className="btn btn-key btn-lg" href={deployUrl()} rel="noopener">Deploy to Vercel</a>
             <Link className="btn btn-lg" href="/docs">Read the guide <IconArrow width={18} height={18} /></Link>
           </div>
-          <p className="muted fine">Free &middot; about 30 minutes &middot; Telnyx number about $1 a month</p>
         </div>
         <PhoneDemo hero />
       </div>
