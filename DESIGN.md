@@ -4,14 +4,13 @@ The site **inherits the Knock app's world unchanged**: iOS-style Liquid Glass ov
 
 ## What the site adds
 
-- **The intercom panel** (home hero): one large glass plate with a readout, an orange Deploy key and a grid of glass "buzzer" buttons, one per section. Hovering or focusing a buzzer echoes `Calling: <section>` on the readout and brightens the page's orange orb, like the app's buzz glow.
-- **The demo phone:** a working, tappable replica of the app's Open screen that plays itself through standby, ringing, opening and opened until you touch it.
+- **The hero is the app.** Headline and two buttons on the left; on the right a working, tappable replica of the Open screen that plays itself through standby, ringing, opening and opened. A glass notification ("Someone is at the door") appears beside it while it rings and an "Opened by Maya" pill when it opens, and the orange glow behind it brightens on a buzz. (An earlier version used an intercom-panel hero with a readout and buzzer buttons; it was too wordy and did not show the product, so it was removed.)
 - **The intercom checker:** three questions that return a verdict (good, maybe, bad) with the next link.
 - **Docs (Read mode):** a calm glass reading layout: sticky section nav, 46rem measure, on-page table of contents, callouts (tip, warn, danger, "seen in the wild"), and annotated screenshots whose numbered orange rings are called "ring 1…n" in the text.
 
 ## Restraint
 
-The home page says each thing once: a short hero, how it works, a problem in two lines, a checker, four tiles, three cost rows, a one-sentence safety note and five questions. Detail lives in the docs. Buzzers and readouts inside the hero plate are outlined, not glass, so glass is never nested in glass.
+The home page says each thing once: a hero that is the product, four short "how it works" beats, a problem in two lines, a checker, four tiles, three cost rows, a one-sentence safety note and five questions. Detail lives in the docs. Buzzers and readouts inside the hero plate are outlined, not glass, so glass is never nested in glass.
 
 ## Rules
 

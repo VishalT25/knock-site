@@ -5,7 +5,7 @@ import { SignGlyph, SleepGlyph } from "./Icons";
 type S = "idle" | "ringing" | "opening" | "opened";
 
 /** A real, tappable copy of the app's Open screen. Plays itself until you touch it. */
-export function PhoneDemo() {
+export function PhoneDemo({ hero = false }: { hero?: boolean }) {
   const [s, setS] = useState<S>("idle");
   const [wait, setWait] = useState(0);
   const touched = useRef(false);
@@ -45,7 +45,13 @@ export function PhoneDemo() {
   const word = s === "ringing" ? "Open door" : s === "opening" ? "Opening" : s === "opened" ? "Door open" : "";
 
   return (
-    <div>
+    <div className={hero ? "hero-phone" : undefined} data-s={s}>
+      {hero && (
+        <>
+          <div className="float-notif glass" aria-hidden><span className="fn-ic"><SignGlyph /></span><span><b>Someone is at the door</b><i>Tap to open</i></span></div>
+          <div className="float-done glass" aria-hidden><b>Opened by Maya</b><i>6 seconds after the buzz</i></div>
+        </>
+      )}
       <div className="phone" role="group" aria-label="Interactive demo of the Knock Open screen">
         <div className="screen" data-s={s}>
           <div className="glow" aria-hidden />
@@ -63,7 +69,7 @@ export function PhoneDemo() {
           </div>
         </div>
       </div>
-      <p className="demo-hint muted">{s === "ringing" ? "Go on, tap Open door." : "A real copy of the app screen. Watch, or tap it."}</p>
+      <p className="demo-hint muted">{s === "ringing" ? "Go on, tap Open door." : "The real app. Watch it, or tap it."}</p>
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { PanelHero } from "@/components/PanelHero";
-import { PhoneDemo } from "@/components/PhoneDemo";
+import { Hero } from "@/components/Hero";
 import { Checker } from "@/components/Checker";
 import { FAQ } from "@/lib/faq";
 import { SITE_URL, deployUrl } from "@/lib/site";
@@ -26,21 +25,16 @@ export default function Home() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
-      <PanelHero />
+      <Hero />
 
       <section id="how" className="section" aria-labelledby="how-h">
         <div className="wrap">
           <h2 id="how-h" className="section-title">How it works</h2>
-          <div className="stage">
-            <div className="stage-col">
-              <div className="beat"><span className="n">1</span><h3>Someone buzzes</h3><p className="muted">Your intercom calls your Knock number. Knock answers and holds the line.</p></div>
-              <div className="beat"><span className="n">2</span><h3>Phones ring</h3><p className="muted">Whoever expects the visitor rings first, then everyone.</p></div>
-            </div>
-            <PhoneDemo />
-            <div className="stage-col">
-              <div className="beat"><span className="n">3</span><h3>One tap opens it</h3><p className="muted">The first tap wins. Everyone sees who opened the door.</p></div>
-              <div className="beat"><span className="n">4</span><h3>Nobody home?</h3><p className="muted">Knock can ring a backup number and connect the visitor.</p></div>
-            </div>
+          <div className="beats">
+            <div className="beat"><span className="n">1</span><h3>Someone buzzes</h3><p className="muted">Your intercom calls your Knock number.</p></div>
+            <div className="beat"><span className="n">2</span><h3>Phones ring</h3><p className="muted">Whoever expects them first, then everyone.</p></div>
+            <div className="beat"><span className="n">3</span><h3>One tap opens it</h3><p className="muted">First tap wins. Everyone sees who.</p></div>
+            <div className="beat"><span className="n">4</span><h3>Nobody home?</h3><p className="muted">A backup number can pick up.</p></div>
           </div>
         </div>
       </section>
