@@ -19,7 +19,7 @@ By the end you will have four values to give to Knock, and a working phone numbe
 ## The six steps
 
 1. [Create and verify your account](/docs/telnyx/account) (5 min)
-2. [Upgrade to Paid](/docs/telnyx/upgrade) (5 min). Do not skip this.
+2. [Upgrade to Paid](/docs/telnyx/upgrade) (5 min, about $5 of credit). Do not skip this.
 3. [Buy a phone number](/docs/telnyx/number) (2 min)
 4. [Create the Call Control app](/docs/telnyx/call-control) (4 min)
 5. [Get your keys](/docs/telnyx/keys) (3 min)

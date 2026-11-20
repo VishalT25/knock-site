@@ -78,3 +78,8 @@ make("buy-number.png", "telnyx-buy-number.png", (0, 60, 1040, 700),
 make("outbound-profile.png", "telnyx-outbound-profile.png", (0, 60, 1040, 470),
      marks=[((32, 208, 149, 240), "r")],
      paints=[((192, 336, 224, 366), (0, -40))])
+
+# after upgrading: every Paid requirement ticked
+make("account-levels-paid.jpg", "telnyx-account-levels-paid.png", (0, 60, 1029, 1000),
+     marks=[((68, 590, 502, 818), "l")],
+     paints=[((503, 583, 532, 618), (0, 60))])

@@ -1,9 +1,9 @@
 ---
 title: 2. Upgrade your Telnyx account to Paid
-description: Telnyx Trial accounts only take calls from one verified number, so your building's intercom is rejected. Upgrading to Paid is the fix. Here is exactly what it needs.
+description: A Telnyx Trial account rejects your building's calls. Adding about $5 of credit and finishing a few checks upgrades it to Paid, which fixes it. Here is exactly what to do.
 updated: 2026-11-20
 ---
-This is the step most people skip, and the reason many first attempts fail.
+This is the step most people skip, and the reason many first attempts fail. **The short version: add about $5 of credit, and finish the checks below.**
 
 :::seen Seen in the wild
 Everything was set up correctly. A test call from the owner's own phone worked. The building's intercom then hit *"the customer you have dialed is currently not available."* The cause was not Knock and not the building: the Telnyx account was still on **Trial**, and a Trial account only accepts calls from the one number you verified.
@@ -11,7 +11,7 @@ Everything was set up correctly. A test call from the owner's own phone worked. 
 
 ## Why you need it
 
-Telnyx's trial documentation says a trial account can only receive calls **from your verified number**, and can only call it. Your building's intercom is neither. A Paid account removes that limit. Telnyx's pages don't state the point in so many words ("Paid accepts calls from anyone"), so the real proof is the test in the last section below.
+Telnyx's trial documentation says a trial account can only receive calls **from your verified number**, and can only call it. Your building's intercom is neither. A Paid account removes that limit. In the setup this guide is based on, calls from a phone that was *not* the verified one went straight through once the account was Paid. Telnyx's own pages don't spell that out, so run the quick test at the end of this page.
 
 Other Trial limits worth knowing: calls are capped at 10 minutes, you can buy one number, and the number is reclaimed within 30 days if the account isn't upgraded.
 
@@ -35,7 +35,7 @@ Open the account menu (top right), choose **Account settings**, then the **Accou
 1. Go to **Account settings, Security** and turn on two-factor authentication. An authenticator app is the safest option.
 2. Go to **Account settings, My Addresses** and add your home address. Telnyx uses it for emergency-calling rules; it is a normal requirement for phone numbers.
 3. Go to **Account settings, Profile** and make sure your mobile number is verified.
-4. Open the account menu, choose **Add credit**, and add a card and a small balance. Telnyx's pages we checked don't state a minimum amount. Add what you're comfortable with; a household's usage is pennies.
+4. Open the account menu (top right), choose **Add credit**, and add a card and **about $5**. That is what the card-payment tick needs, and it was enough in our setup. Telnyx's pages we checked don't state a minimum, so it may ask for more in some countries. The credit is a balance you spend (see [Costs](/docs/costs)), not a fee.
 5. Return to **Account Levels** and press **Upgrade**.
 
 :::warn Payment details are yours to enter
@@ -44,7 +44,10 @@ Only you should enter card details, directly on Telnyx's own pages. Don't paste 
 
 ## What changes after you upgrade
 
-- The Paid card on **Account Levels** shows all green ticks.
+- The Paid card on **Account Levels** shows all green ticks. The **Verified** card below it keeps two red crosses (KYC and an "AI agent evaluation"). You don't need those.
+
+![After upgrading. Ring 1: every Paid requirement is ticked, including "Payment with credit card has been made".](/docs/img/telnyx-account-levels-paid.png)
+
 - You can receive calls from any number, including your building's intercom (see the test below).
 - Telnyx still adds an automated-call announcement before spoken words. Knock is silent by default, so you won't hear it. Details on [Settings](/docs/settings).
 - There are outbound limits: Telnyx documents 100 outbound calls a day, 10 an hour, 5 at once, and a limited set of destination countries. Knock's backup-number call is an outbound call, so make sure your backup number's country is allowed.

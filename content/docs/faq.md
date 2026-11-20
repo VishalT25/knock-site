@@ -9,7 +9,7 @@ If your intercom calls a regular phone number when a visitor buzzes, and unlocks
 
 ## Is it really free?
 
-The software, Vercel's free tier and Neon's free tier cost nothing. The Telnyx number is about $1 a month, plus about half a cent a minute for calls, and Telnyx needs a card on file to upgrade. See [Costs](/docs/costs).
+The software, Vercel's free tier and Neon's free tier cost nothing. The Telnyx number is about $1 a month, plus about half a cent a minute for calls, and Telnyx needs a card with about $5 of credit to upgrade. See [Costs](/docs/costs).
 
 ## Why do I need to upgrade Telnyx?
 

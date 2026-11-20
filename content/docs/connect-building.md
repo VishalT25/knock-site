@@ -16,7 +16,7 @@ You can test almost the whole chain without touching the building.
 If this works, Telnyx, your number, the webhook and the app are all fine. The only thing left to confirm is that your intercom accepts the tone, and a real visitor tests that.
 
 :::warn If this test fails with "the customer you have dialed is not available"
-Your Telnyx account is probably still on Trial. Trial accounts only take calls from your verified number. [Upgrade to Paid](/docs/telnyx/upgrade) first.
+Your Telnyx account is probably still on Trial. Trial accounts only take calls from your verified number. [Upgrade to Paid](/docs/telnyx/upgrade) first (about $5 of credit).
 :::
 
 ## Two ways to point the building at Knock

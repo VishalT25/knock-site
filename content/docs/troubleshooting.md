@@ -24,7 +24,7 @@ Start with the symptom closest to yours. Every fix here comes from a real setup.
 
 This means the call never reached Knock. In order of likelihood:
 
-1. **Your Telnyx account is still on Trial.** Trial accounts only accept calls from the one number you verified. A call from your own phone works; your intercom's does not. Fix: [upgrade to Paid](/docs/telnyx/upgrade). This was the cause in the setup this guide is based on: everything else was correct.
+1. **Your Telnyx account is still on Trial.** Trial accounts only accept calls from the one number you verified. A call from your own phone works; your intercom's does not. Fix: [upgrade to Paid](/docs/telnyx/upgrade) (add about $5 of credit). This was the cause in the setup this guide is based on: everything else was correct.
 2. **The number isn't attached to the app.** In Telnyx, open **Phone Numbers** and check the **Connection/Application** column names your Call Control app. If it's empty, assign the number on the application's **Numbers** tab.
 3. **Telnyx can't reach your site, or Knock rejects the call.** Check the application's webhook address is exactly `https://your-site/api/telnyx` (no spaces or trailing slash, `https`, **API v2**). If `TELNYX_PUBLIC_KEY` is wrong or missing, Knock rejects every event. Fix the key and **redeploy**.
 4. **Vercel is blocking public access.** If you turned on Vercel Authentication or Password Protection for the production site, Telnyx can't call your webhook. Turn it off for production.
