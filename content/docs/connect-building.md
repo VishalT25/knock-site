@@ -71,6 +71,3 @@ If Knock says **Opened** but the door stays shut:
 
 More fixes are on [Troubleshooting](/docs/troubleshooting).
 
-## Check your lease and house rules
-
-Some buildings restrict forwarding the intercom or who may be listed for a unit. Knock changes nothing about the building's equipment, but it's sensible to be upfront with whoever manages the building.

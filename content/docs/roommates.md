@@ -26,19 +26,12 @@ Once someone uses it, it's gone. The list under "Waiting to be used" only shows 
 3. Choose **Add to Home Screen**, then **Add**.
 4. **Close Safari and open Knock from the new Home Screen icon.** This is not optional: iPhone only allows notifications from an app opened this way.
 
-:::seen Seen in the wild
-"Enable notifications" showed an error on an iPhone that was still running Knock in a Safari tab. The page now says this plainly: *"On iPhone, add Knock to your Home Screen first, then open it from there."* After adding it to the Home Screen, notifications worked.
-:::
-
 ### Android (Chrome)
 
 1. Open your Knock address in Chrome.
 2. Tap the **⋮** menu, then **Install app** (or **Add to Home screen**).
 3. Open Knock from its icon.
 
-### A computer
-
-Any current browser works for the admin screens. Install it from the address bar if you like. Notifications on a computer require the browser to be allowed to show them.
 
 ## Join (each roommate)
 

@@ -38,10 +38,6 @@ On your site the "Webhook reachable" row names your own Vercel address.
 
 Press **Check again** after each fix. **Continue anyway** lets you carry on, but the test call won't work until the Telnyx rows are green.
 
-:::seen Seen in the wild
-"Webhook reachable" was green but the three Telnyx rows were red. That is normal and means the site is fine: only the four Telnyx values still need adding in Vercel, and a redeploy.
-:::
-
 ## Step 3: Test call
 
 Knock calls **your own phone**, answers on your behalf, speaks, holds the line, sends the unlock tone, and hangs up. This proves Telnyx, your number, the outbound voice profile and the app all work together.

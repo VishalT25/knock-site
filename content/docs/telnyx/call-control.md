@@ -68,8 +68,4 @@ You can also check it from the number side: **Phone Numbers**, where the **Conne
 
 Open the application, **Details** tab. There is an **Application ID**, a long number. Copy it somewhere for the next page. This is `TELNYX_CONNECTION_ID`.
 
-:::seen Seen in the wild
-The calls reached Telnyx, but the intercom still got "customer not available." The number was attached to the app, the webhook address was correct, and the cause turned out to be the Trial account (see [Upgrade to Paid](/docs/telnyx/upgrade)). When this page is right but calls fail, check the account level first.
-:::
-
 **Next:** [Get your keys](/docs/telnyx/keys)

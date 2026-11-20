@@ -66,8 +66,3 @@ The **Log** tab lists every buzz with the time, the outcome, who opened it and h
 
 **Settings** shows the number your building should dial, in a dot-matrix readout with a **Copy** button. Anyone in the household can see it. It comes from your `TELNYX_NUMBER` setting.
 
-## Light and dark
-
-The sun/moon button at the top switches between light and dark. In **Settings, Appearance** you can pick **Auto**, **Light** or **Dark**.
-
-**Next:** [Settings and environment variables](/docs/settings)

@@ -9,6 +9,10 @@ The site **inherits the Knock app's world unchanged**: iOS-style Liquid Glass ov
 - **The intercom checker:** three questions that return a verdict (good, maybe, bad) with the next link.
 - **Docs (Read mode):** a calm glass reading layout: sticky section nav, 46rem measure, on-page table of contents, callouts (tip, warn, danger, "seen in the wild"), and annotated screenshots whose numbered orange rings are called "ring 1…n" in the text.
 
+## Restraint
+
+The home page says each thing once: a short hero, how it works, a problem in two lines, a checker, four tiles, three cost rows, a one-sentence safety note and five questions. Detail lives in the docs. Buzzers and readouts inside the hero plate are outlined, not glass, so glass is never nested in glass.
+
 ## Rules
 
 - Doto only for readouts, countdowns, invite codes and the demo phone. Everything else is the UI face (system font on Apple devices, Hanken Grotesk fallback).

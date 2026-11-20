@@ -42,17 +42,3 @@ According to Telnyx's own documentation, a trial account is limited to **one ver
 Telnyx's trial documentation says a trial's phone number is reclaimed within 30 days if the account isn't upgraded. Don't leave it.
 :::
 
-## How long it takes
-
-About 30 minutes of your own time, spread like this:
-
-| Step | Time |
-|---|---|
-| [Check your intercom](/docs/will-it-work) | 5 min |
-| [Deploy Knock](/docs/deploy) | 5 min |
-| [Telnyx setup](/docs/telnyx) | 15 min |
-| [First-time setup and test call](/docs/first-run) | 3 min |
-| [Roommates and phones](/docs/roommates) | 5 min |
-| [Connect your building](/docs/connect-building) | A day or two of waiting for the building |
-
-Telnyx may take a little longer if it asks you to wait while it reviews your account.

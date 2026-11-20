@@ -35,16 +35,6 @@ Anyone who can use a signed-in phone, or who gets into your Vercel or Telnyx acc
 - Tell your household how auto-open works before anyone uses it.
 - Don't screenshot the Telnyx API key or paste it into a chat or a support ticket.
 
-## Your building and your neighbours
-
-Your front door protects more than your own flat. Before you use Knock, check your lease and house rules about intercom use and whether you may change or forward the number. Be upfront with whoever manages the building.
-
-## What Knock does not do
-
-- It has no analytics and no central server. There is no account with us. (The people who run this website don't see your calls, your numbers or your log.)
-- It doesn't record audio.
-- It doesn't store card details or your Telnyx password.
-
 ## Reporting a problem
 
 If you find a security issue, report it privately to the repository maintainer through the repository's security page, not in a public issue.

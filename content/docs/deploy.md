@@ -35,14 +35,7 @@ When it finishes, Vercel shows your site's address, for example `https://knock-y
 
 Open the address in a browser. You should see Knock's first-run screen asking for a household name. **Don't set it up yet.** The Telnyx step comes first so the setup checks can all go green.
 
-## What you did not have to do
-
-Knock creates its own notification keys the first time it needs them and stores them in your database. Older guides tell you to run a command to generate them; you don't need to.
-
 ## What happens next
 
 You now have an app with no phone line behind it. Next you will create the Telnyx account that answers your building's call: [Telnyx setup](/docs/telnyx).
 
-:::seen Seen in the wild
-Setup page shows an error about the database? The deployment finished before the database was attached. Attach Neon under **Storage**, then redeploy once.
-:::

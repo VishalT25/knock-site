@@ -26,6 +26,8 @@ If your intercom is one of these, Knock can't help, and it is better to find out
 
 ## Find out in five minutes
 
+Two details to keep in mind: the intercom's own phone number doesn't matter (only the number it *dials* does), and a Telnyx number is an internet number, so ask the building that VoIP numbers are accepted.
+
 You don't need to set anything up for this. You only need to ask the right person the right questions, or watch what happens when a friend buzzes you.
 
 ### Option 1: Ask whoever receives the calls
@@ -52,16 +54,3 @@ Send your property manager or intercom company one question: *"When a visitor bu
 Whatever you press to unlock is the **unlock digit** in Knock's settings. The default is `9`. If yours is different, you will change it in [Settings](/docs/settings) later.
 :::
 
-## Two details that trip people up
-
-- **The intercom's own phone number doesn't matter.** Caller ID is irrelevant. Only the number *it dials* matters.
-- **Ask if internet phone numbers are accepted.** A Telnyx number is an internet (VoIP) number. Almost every modern system dials it like any other number, but a few older systems only dial certain carriers. If your building says "cell phones and landlines only", check that VoIP numbers work before you pay for anything.
-
-## Decision
-
-| What you found | What it means |
-|---|---|
-| It calls a phone, a digit unlocks it, the number can be changed | Go ahead. [Costs and accounts](/docs/costs) is next. |
-| It calls a phone and a digit unlocks it, but the building won't change the number | Likely works: forward calls from the number on file to your Knock number. See [Connect your building](/docs/connect-building). |
-| It rings a wall handset, or only opens from an app | Knock can't help. |
-| You don't know | Do Option 2 or 3 above. |

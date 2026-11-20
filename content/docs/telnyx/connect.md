@@ -28,10 +28,6 @@ Environment variables only take effect on the next deployment.
 2. Open the menu on the latest deployment and choose **Redeploy**.
 3. Wait for it to turn green, about a minute.
 
-:::seen Seen in the wild
-The app kept saying the Telnyx values were missing after they had been added. They had been added after the last deployment and no redeploy had happened. Every variable change needs a redeploy.
-:::
-
 ## Check it
 
 Open Knock and run first-time setup. The **Checks** screen should show five rows. If all five are green, Telnyx and Knock are connected.

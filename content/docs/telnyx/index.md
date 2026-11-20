@@ -3,7 +3,7 @@ title: "Telnyx setup: overview"
 description: Telnyx is the account that answers your building's phone call. This section walks through every click, with screenshots, in six short steps.
 updated: 2026-11-20
 ---
-Telnyx is a phone company for developers. In Knock's setup it does one job: when your building's intercom dials your number, Telnyx answers, tells Knock, and later presses the unlock digit when someone taps **Open door**. This is the longest part of setup, so it is split into six short pages.
+Telnyx answers your building's call and presses the unlock digit when someone taps **Open door**. It's the longest part of setup, so it's split into six short pages.
 
 ## What you will end up with
 
@@ -33,8 +33,3 @@ The Telnyx portal changes its menu layout from time to time. If a menu item isn'
 You will handle an API key. Telnyx shows it **once**. Paste it straight into Vercel and nowhere else. Never send it to anyone, and never put it in a screenshot.
 :::
 
-## What you will not need
-
-- You don't need to write any code.
-- You don't need to buy minutes in advance beyond whatever Telnyx asks for when you add a card.
-- You don't need a business account. A personal one works.
