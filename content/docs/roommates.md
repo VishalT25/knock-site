@@ -11,7 +11,9 @@ Nobody needs an app store, an account or a password. Each person opens your link
 2. Find **Invite a roommate**.
 3. Choose how long the code lasts: **1 hour**, **1 day** or **7 days**.
 4. Press **Make an invite code**. A code like `KNOCK-7QXM-2PTR` appears.
-5. Press **Copy code** and send it to your roommate, along with your Knock address.
+5. Press **Copy invite message** and paste it into a text to your roommate (or press **Share** to use your phone's share sheet).
+
+A roommate needs two things: **your Knock address** and **the code**. The invite message contains both, plus the first steps: open the link on their phone (Safari on iPhone, Chrome on Android), then follow the screens to add Knock to their Home Screen. If you only send the code, they won't know where to type it, so send the whole message.
 
 :::warn The code is shown once, and works once
 Once someone uses it, it's gone. The list under "Waiting to be used" only shows a masked hint, never the real code. If a code is lost or sent to the wrong person, press **Rotate: cancel all unused invites**.
