@@ -70,4 +70,10 @@ Check your phone's **Focus** or **Do Not Disturb** mode, and iPhone's **Settings
 
 In **Settings, People & phones** you can see each person and their phones. **Sign out phone** removes one device (a lost phone, say) without removing the person. **Remove person** deletes the person and all of their phones.
 
+### Make the phone the admin
+
+If you set Knock up on a computer, the computer's browser is the admin. You will usually want the admin on your phone instead. Join from your phone like any roommate (it needs an invite code), then on the computer open **Settings, People & phones**, find your phone's name and tap **Make admin**. Open Knock on your phone and the admin controls are there.
+
+Admins can promote and demote each other, but nobody can change their own role. That way the household can never be left without an admin. To take admin away from the computer's browser, tap **Remove admin** next to its name from your phone.
+
 **Next:** [Connect your building](/docs/connect-building)
