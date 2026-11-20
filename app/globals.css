@@ -397,3 +397,5 @@ p { margin: 0; text-wrap: pretty; }
 @media (min-width: 52rem) { .beats { grid-template-columns: repeat(4, 1fr); gap: 2rem; } }
 .beats .beat { border-top: 1px solid var(--glass-line); padding-top: 1rem; }
 .beats .beat .n { display: block; margin-bottom: 0.4rem; }
+
+.hero2 { overflow-x: clip; }
