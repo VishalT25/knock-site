@@ -76,6 +76,8 @@ In **Settings, People & phones** you can see each person and their phones. **Sig
 
 If you set Knock up on a computer, the computer's browser is the admin. You will usually want the admin on your phone instead. Join from your phone like any roommate (it needs an invite code), then on the computer open **Settings, People & phones**, find your phone's name and tap **Make admin**. Open Knock on your phone and the admin controls are there.
 
+If you can't get to an admin screen at all (the admin session is stuck on another browser, or nobody is an admin any more), open **Settings** on the phone you want as admin, open **Make this phone an admin**, and enter your setup password, the `SETUP_TOKEN` you chose on Vercel. That's proof you own the deployment. Five wrong tries in an hour locks it for an hour.
+
 Admins can promote and demote each other, but nobody can change their own role. That way the household can never be left without an admin. To take admin away from the computer's browser, tap **Remove admin** next to its name from your phone.
 
 **Next:** [Connect your building](/docs/connect-building)

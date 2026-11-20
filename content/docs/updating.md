@@ -58,7 +58,7 @@ Do these when a key might have leaked, or when someone leaves the household.
 | A lost phone | Knock, **Settings, People & phones**, **Sign out phone**. |
 | Outstanding invite codes | **Settings, Invite a roommate**, **Rotate: cancel all unused invites**. |
 | A person leaving | **Settings, People & phones**, **Remove person**. |
-| `SETUP_TOKEN` | Only matters before setup. After setup it does nothing. |
+| `SETUP_TOKEN` | Used at first-run setup, and later if you need to [make a phone an admin](/docs/roommates). Change it in Vercel and redeploy if it leaks. |
 
 ## Removing Knock completely
 

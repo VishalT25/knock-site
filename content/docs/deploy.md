@@ -33,6 +33,10 @@ Open your project in Vercel, go to **Storage**, choose **Create**, pick **Neon**
 
 When it finishes, Vercel shows your site's address, for example `https://knock-yourname.vercel.app`. **Write it down.** You will paste it into Telnyx as `https://knock-yourname.vercel.app/api/telnyx`.
 
+:::warn Use the short address, not the long one
+Vercel's "Visit" button can open a **long address with random letters** in it, such as `knock-yourname-a1b2c3d4e-yourteam.vercel.app`. That is a permanent copy of this one build and it **never updates**. Use the short address, the one in your project's **Settings, Domains** (`something.vercel.app`), for everything: setup, Telnyx, and your roommates' links. Newer versions of Knock send you from the long address to the short one automatically, but older builds don't.
+:::
+
 Open the address in a browser. You should see Knock's first-run screen asking for a household name. **Don't set it up yet.** The Telnyx step comes first so the setup checks can all go green.
 
 ## What happens next
